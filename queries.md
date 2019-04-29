@@ -9,7 +9,7 @@
     where postalCode = "1010"
 
 ## find the phone number for the supplier with the id 11. Should be (010) 9984510.
-    select * from suppliers
+    select * fro "m suppliers
     where supplierId = "11"
 
 ## list orders descending by the order date. The order with date 1997-02-12 should be at the top.
@@ -21,6 +21,8 @@
     where length(supplierName) > 20
 
 ## find all customers that include the word "market" in the name. Should return 4 records.
+    select * from customers
+    where customerName like "%market%"
 
 ## add a customer record for _"The Shire"_, the contact name is _"Bilbo Baggins"_ the address is _"1 Hobbit-Hole"_ in _"Bag End"_, postal code _"111"_ and the country is _"Middle Earth"_.
 
