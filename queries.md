@@ -9,7 +9,7 @@
     where postalCode = "1010"
 
 ## find the phone number for the supplier with the id 11. Should be (010) 9984510.
-    select * fro "m suppliers
+    select * from suppliers
     where supplierId = "11"
 
 ## list orders descending by the order date. The order with date 1997-02-12 should be at the top.
@@ -25,6 +25,8 @@
     where customerName like "%market%"
 
 ## add a customer record for _"The Shire"_, the contact name is _"Bilbo Baggins"_ the address is _"1 Hobbit-Hole"_ in _"Bag End"_, postal code _"111"_ and the country is _"Middle Earth"_.
+    insert into Customers (CustomerName, ContactName, Address, PostalCode, Country) 
+    values ('The Shire', 'Bilbo Baggins', '1 Hobbit-Hole in Bag End', '111', 'Middle Earth')
 
 ## update _Bilbo Baggins_ record so that the postal code changes to _"11122"_.
 
